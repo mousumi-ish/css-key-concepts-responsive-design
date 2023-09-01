@@ -58,15 +58,18 @@ h1 {
     display: none;
   }
 }
-
+.theme-a {
+  background: #dca;
+  color: #731;
+}
 @media (prefers-color-scheme: dark) {
-  h1,
-  p,
-  div {
-    color: white;
+  .theme-a.adaptive {
+    background: #753;
+    color: #dcb;
+    outline: 5px dashed #000;
   }
-
-  div {
-    background-color: black;
-  }
+}
+.dark-mode {
+  background-color: black;
+  color: white;
 }
