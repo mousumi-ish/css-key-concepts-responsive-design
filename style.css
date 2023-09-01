@@ -73,3 +73,22 @@ h1 {
   background-color: black;
   color: white;
 }
+.container {
+  display: flex;
+  background-color: #753;
+}
+.search {
+  flex: 1;
+}
+.container > li {
+  flex: 1;
+}
+@media all and (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container > li {
+    flex-basis: 50%;
+  }
+}
